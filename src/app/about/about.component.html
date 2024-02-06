@@ -1,0 +1,9 @@
+<div class="container-fluid bg-warning d-flex flex-wrap gap-3 row py-5">
+    <h1 class="text-center py-5">Our Products</h1>
+    <div *ngFor="let ondeProduct of productCards; let i=index" class="mx-auto d-flex flex-column justify-content-around align-items-center col-3">
+        <img class="img-fluid" [src]="ondeProduct.imgPath">
+        <h1><span class="fw-bold">Name: </span>Product {{i+1}}</h1>
+        <p><span class="fw-bold">Description: </span>{{ondeProduct.pDesc}}</p>
+        <p><span class="fw-bold">Price: </span>{{i+1}}</p>
+    </div>
+</div>
